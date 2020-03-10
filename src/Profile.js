@@ -25,12 +25,10 @@ const Profile = ({ match }) => {
             </h3>
             <p>{profile.description}</p>
 
-            {country ? (
+            {country && (
                 <p>
                     Currently {username} is in {country}
                 </p>
-            ) : (
-                ''
             )}
         </div>
     );
