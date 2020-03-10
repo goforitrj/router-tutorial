@@ -11,7 +11,7 @@ const profileData = {
     }
 };
 
-const Profile = ({ match }) => {
+const Profiles = ({ match }) => {
     const { username, country } = match.params;
 
     const profile = profileData[username];
@@ -34,4 +34,4 @@ const Profile = ({ match }) => {
     );
 };
 
-export default Profile;
+export default Profiles;

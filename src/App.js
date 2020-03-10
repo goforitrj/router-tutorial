@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import About from './About';
 import Home from './Home';
-import Profile from './Profile';
+import Profiles from './Profiles';
 
 const App = () => {
     return (
@@ -20,11 +20,11 @@ const App = () => {
             <Route
                 path="/profiles/:username"
                 exact={true}
-                component={Profile}
+                component={Profiles}
             ></Route>
             <Route
                 path="/profiles/:username/:country"
-                component={Profile}
+                component={Profiles}
             ></Route>
         </div>
     );
