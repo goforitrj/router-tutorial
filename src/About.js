@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import qs from 'qs';
 import AboutDetail from './AboutDetail';
+import WithRouterSample from './WithRouterSample';
 
 const About = ({ location }) => {
     const query = qs.parse(location.search, {
@@ -31,6 +32,7 @@ const About = ({ location }) => {
                 render={() => <div>Select Category please</div>}
             />
             <Route path="/about/:category" component={AboutDetail}></Route>
+            <WithRouterSample />
         </div>
     );
 };
