@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import qs from 'qs';
 import AboutDetail from './AboutDetail';
 import WithRouterSample from './WithRouterSample';
@@ -19,10 +19,26 @@ const About = ({ location }) => {
             <div>
                 <ul>
                     <li>
-                        <Link to="/about/work">Work Experience</Link>
+                        <NavLink
+                            to="/about/work"
+                            activeStyle={{
+                                background: 'tomato',
+                                color: 'white'
+                            }}
+                        >
+                            Work Experience
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/about/family">Family</Link>
+                        <NavLink
+                            to="/about/family"
+                            activeStyle={{
+                                background: 'green',
+                                color: 'white'
+                            }}
+                        >
+                            Family
+                        </NavLink>
                     </li>
                 </ul>
             </div>
